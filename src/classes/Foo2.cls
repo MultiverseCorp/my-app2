@@ -8,7 +8,9 @@ public inherited sharing class Foo2 {
 		return null;
 	}
     
-    void foo() {   
+
+	//testPR
+void foo() {   
         
         String myString = 'MY_HARDCODED_STRING';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
