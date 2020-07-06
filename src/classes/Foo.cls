@@ -1,3 +1,4 @@
+//PR1
 public inherited sharing class Foo {
     void foo() {
         
