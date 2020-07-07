@@ -1,6 +1,6 @@
 public class EncryptUtil {
     public static Blob encrypt(String st) {
-        String secret = 'sWDdf@£$dd1';
+        String secret = 'sWDdf123dd1';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
         Blob myKey = Blob.valueOf(secret);
         Blob data = Blob.valueOf(st);
