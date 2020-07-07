@@ -1,10 +1,10 @@
 public class EncryptUtil {
     public static Blob encrypt(String st) {
-        String secret = 'sWDdf123dd1';
+        String secret = 'asdqweda';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
-        Blob myKey = Blob.valueOf(secret);
+        Blob myKey2 = Blob.valueOf(secret);
         Blob data = Blob.valueOf(st);
-        Blob encrypted = Crypto.encrypt('AES128', myKey, hardCodedIV, data);
+        Blob encrypted = Crypto.encrypt('AES128', myKey2, hardCodedIV, data);
         return encrypted;
     }
 }
