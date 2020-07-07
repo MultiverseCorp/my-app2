@@ -1,6 +1,6 @@
 public class LineItemTriggerHandler {
 		
-	/* Public methods
+	/* Public methods 22
 	========================== */
 	
 	/** This (!) handler methods is to be used on all relevant triggers events.
