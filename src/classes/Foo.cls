@@ -5,7 +5,7 @@ public inherited sharing class Foo {
         String myString2 = 'MY_HARDCODED_STRING';
         String myString3 = 'MY_HARDCODED_STRING';
         
-        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123456');
+        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 1234567');
         Blob myKey = Blob.valueOf(myString);
         Blob data = Blob.valueOf('Data to be encrypted');
         Blob encrypted = Crypto.encrypt('AES128', myKey, hardCodedIV, data);
