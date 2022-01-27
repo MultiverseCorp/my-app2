@@ -26,7 +26,7 @@ public without sharing class PobControllerExt2 {
 		isExistingRecord = (po!=null && po.Id != null) ? true : false; 
 		if (isExistingRecord) {
 			heading = po.Name;
-			existingLineItems = [SELECT Units__c, Lot__c, Amount__c FROM Line_Item__c WHERE Order__c = :po.Id];
+			existingLineItems = [SELECT Units__c, Lot__c, Amount__c FROM Line_Item__c];
 		} else {
 			heading = Label.POB_Heading_New;
 		}
