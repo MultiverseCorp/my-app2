@@ -1,6 +1,7 @@
 public inherited sharing class Foo {
     void foo() {
         
+        //1
         String myString = 'MY_HARDCODED_STRING';
         String myString2 = 'MY_HARDCODED_STRING';
         String myString3 = 'MY_HARDCODED_STRING';
