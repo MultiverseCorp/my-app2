@@ -1,0 +1,18 @@
+@isTest
+public class createNewReviewLogTest {
+    static testMethod void testCreateReviewLog(){
+        String status='In Progress';
+        String userName='005Dp000001BoCGIA0';
+        String managerName='005Dp000001BoCBIA0';
+        String adminName='';
+        Date initiatedOn=Date.today();
+        Date completedOn=Date.today();
+        createNewReviewLog.createReviewLog(status,userName,managerName,adminName,initiatedOn,completedOn);
+        list<Review_Log__c> reviewLogs=[SELECT Status__c,ownerID,Initiated_On__c,Completed_On__c FROM Review_Log__c];
+        System.assertEquals(1,reviewLogs.size());
+        System.assertEquals(status,reviewLogs[0].Status__c);
+        //System.assertEquals(managerName,reviewLogs[0].Manager_Name2__c);
+        System.assertEquals(initiatedOn,reviewLogs[0].Initiated_On__c);
+        System.assertEquals(completedOn,reviewLogs[0].Completed_On__c);
+    }
+}
