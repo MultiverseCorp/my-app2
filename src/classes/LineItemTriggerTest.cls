@@ -34,7 +34,8 @@ private class LineItemTriggerTest {
     	A sortable wrapper is used to sort results when counting product and product categories
     	per order. This test ensure the comparator works as it should. 
     	========================================================================================== */	
-	static testMethod void testWrapperComparator() {
+	@IsTest
+ static void testWrapperComparator() {
 		Test.startTest();
 		
 		// Prepare wrappers: w1=w2, w1>w3
@@ -59,7 +60,8 @@ private class LineItemTriggerTest {
 			- 1000 product lots, 10 OLI per order, 10 Orders per Purchase agreement
 		Please note: no assertions on logic here, only volumes are tested. Logic is tested below. 
     	========================================================================================== */	
-	static testMethod void testLargeVolumes() {
+	@IsTest
+ static void testLargeVolumes() {
 		
 		User accountManager = TestDataFactory.createUser('Account Managers', 'aManager');
 		User inventoryManager = TestDataFactory.createUser('Inventory Managers','iManager');
@@ -129,7 +131,8 @@ private class LineItemTriggerTest {
 		}
 	}
 	
-	static testMethod void testOrdersWithLineItemsInsert() {
+	@IsTest
+ static void testOrdersWithLineItemsInsert() {
 		
 		Order__c myOrder;
 		Lot__c apples, pears, oranges;
@@ -194,7 +197,8 @@ private class LineItemTriggerTest {
 		
 	}
 	
-	static testMethod void testOrdersWithLineItemsUpdate() {
+	@IsTest
+ static void testOrdersWithLineItemsUpdate() {
 		
 		Order__c myOrder;
 		Lot__c apples, pears, oranges;
@@ -262,7 +266,8 @@ private class LineItemTriggerTest {
 		System.assertEquals(11, myOrder.Product_Category_Units_2__c, 'Second product category units are incorrect on update');
 	}
 	
-	static testMethod void testOrdersWithLineItemsDelete() {
+	@IsTest
+ static void testOrdersWithLineItemsDelete() {
 		
 		Order__c myOrder;
 		Lot__c apples, pears, oranges;
@@ -341,7 +346,8 @@ private class LineItemTriggerTest {
     	
 	}
 	
-	static testMethod void testOrdersWithLineItemsUndelete() {
+	@IsTest
+ static void testOrdersWithLineItemsUndelete() {
 		
 		Order__c myOrder;
 		Lot__c apples, pears, oranges;
