@@ -1,4 +1,4 @@
-public class AnonymousController {
+public inherited sharing class AnonymousController {
 
     public String field;
 
