@@ -17,7 +17,7 @@ public class AdminVisibilityHandler {
             String objectApiName = objDescribe.getName();
             
             // Check if the Permission Set for the object exists, create if not
-            List<PermissionSet> permSetList = [SELECT Id FROM PermissionSet WHERE Name = :('PS_' + objectApiName) LIMIT 1];
+            // List<PermissionSet> permSetList = [SELECT Id FROM PermissionSet WHERE Name = :('PS_' + objectApiName) LIMIT 1];
             PermissionSet permSet;
             if (permSetList.isEmpty()) {
                 permSet = new PermissionSet();
